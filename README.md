@@ -15,7 +15,7 @@ poetry add aiocryptopay
 ``` python
 from aiocryptopay import AioCryptoPay, Networks
 
-crypto = AioCryptoPay(token='1337:JHigdsaASq', network=Networks.MAIN_NET)
+crypto = AioCryptoPay(token='1337:JHigdsaASq', network=Networks.MAIN_NET.value)
 
 profile = await crypto.get_me()
 currencies = await crypto.get_currencies()
